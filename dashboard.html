@@ -1,10 +1,10 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
   <title>TIK-PAL</title>
-  <link href="https://fonts.googleapis.com/css2?family=Rubik:wght@400;600;800&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Rubik:wght@400;600;800&display=swap" rel="stylesheet" />
   <style>
     * {
       margin: 0;
@@ -47,35 +47,22 @@
       flex-wrap: wrap;
     }
 
-    .boost-button {
+    .download-button {
       background-color: #e60000;
       color: #fff;
-      padding: 20px;
-      width: 160px;
-      border-radius: 12px;
+      padding: 18px 22px;
       font-size: 18px;
+      border-radius: 12px;
       font-weight: bold;
       text-decoration: none;
-      box-shadow: 0 4px 12px rgba(0,0,0,0.1);
-      transition: transform 0.2s ease;
+      display: inline-block;
+      width: 200px;
+      box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+      transition: background-color 0.3s ease;
     }
 
-    .boost-button span {
-      display: block;
-      margin-top: 12px;
-      background-color: #fff;
-      color: #000;
-      padding: 6px;
-      border-radius: 6px;
-      font-size: 16px;
-    }
-
-    .boost-button:hover {
-      transform: scale(1.05);
-    }
-
-    .nreer span {
-      background-color: yellow;
+    .download-button:hover {
+      background-color: #c30000;
     }
 
     .about-section {
@@ -101,27 +88,27 @@
     }
 
     @media (max-width: 500px) {
-      .title { font-size: 36px; }
-      .subtitle { font-size: 16px; }
-      .boost-button { width: 100%; margin-bottom: 20px; }
+      .title {
+        font-size: 36px;
+      }
+      .subtitle {
+        font-size: 16px;
+      }
+      .download-button {
+        width: 100%;
+        margin-bottom: 20px;
+      }
     }
   </style>
 </head>
 <body>
-
   <div class="container">
     <div class="title">TIK-PAL</div>
     <div class="subtitle">TikTok Engagement Booster Panel</div>
 
     <div class="button-group">
-      <a href="https://www.zeron.com" class="boost-button">
-        Boost your<br>account using
-        <span>Zefoy</span>
-      </a>
-      <a href="https://www.nreer.com" class="boost-button nreer">
-        Boost your<br>account using
-        <span>Nreer</span>
-      </a>
+      <a href="https://www.zefoy.com" class="download-button">Open Zefoy</a>
+      <a href="https://www.nreer.com" class="download-button" style="background-color: yellow; color: #000;">Open Nreer</a>
     </div>
 
     <div class="about-section">
@@ -137,12 +124,11 @@
       </p>
 
       <div class="credits">
-        Credits:<br>
-        Zefoy Developers<br>
+        Credits:<br />
+        Zefoy Developers<br />
         Nreer Developers
       </div>
     </div>
   </div>
-
 </body>
 </html>
